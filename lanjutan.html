@@ -1,0 +1,192 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://untukyou.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://untukyou.likeadream.repl.co/script.js"></script>
+<head>
+</head>
+<body>
+<style>
+body{background-image: url("https://i.pinimg.com/236x/ba/3f/ed/ba3fedcd2370eba5801c5738446becc1.jpg");background-repeat: no-repeat;background-size: cover;}
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="https://i.pinimg.com/originals/c8/16/32/c816322ebd596b09a41d00879b7939fe.gif" id="animasi" width="170px" height="170px"/></div><span id="penutup" style="font-size:1.1rem;"></span></div>
+<br>
+<br>
+<br>
+<br>
+<!-- <br>
+<br>
+<br>
+<br>
+<br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <br>
+<br> -->
+<!-- <div><center><b>HM</b></center></div><br> -->
+<div id="tomAksi"><a class='button' onClick='reaksi();'>Balas Pesan!</a></div>
+</div>
+
+<!-- Teks, Lagu --><script>
+var u=0,penutup;penutup = "sekarang dengerin dulu aja lagunya, itu tuh liriknya pesan yang mau aku kasih ke kamu";
+
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('lagu.mp3');audio.play();}         
+
+//Reaksi
+ async function reaksi(){
+   var { value: hasiljawab } = await swals.fire({
+                    title: 'Ketik jawabannya',
+                    input: 'text',
+                    confirmButtonText: 'Lanjut',
+                    showCancelButton: false,
+                });
+   if(hasiljawab && hasiljawab.length < 1000000000000000000000000000000000000000000000001){      
+   window.hasiljawab = hasiljawab;          	
+   await swals.fire('Makasi dah mau jawab <3', 'Nanti kirim jawabannya ke WhatsApp gw ya!');   
+   window.location = "https://api.whatsapp.com/send?phone=6281906604617&text= " + window.hasiljawab;
+   } else { await swals.fire('Ups!', 'Tidak boleh kosong atau lebih dari 1000000000000000000000000000000000000000000000000 karakter, ya!'); reaksi();}
+   } 
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,123,0.4)', confirmButtonColor: '#55009E', cancelButtonColor: '#FFCA00', allowOutsideClick: false,
+            });
+            async function mulai(){
+                 await swals.fire({
+                  title: ' Halo lagi sayangggg ', 
+                  imageUrl: 'https://i.pinimg.com/originals/d7/72/17/d772177006a4b02591beda745de3055c.gif',
+                  imageWidth: 120, imageHeight: 120,
+                 });  
+                 play();	
+                 await swals.fire({
+                  title: ' Maaf gak bisa kasih hadiah ',
+                  imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8grzXmu9QapL7gG91rekAhT8LYmuaY2Nbeyh_kIzI4oy00GmeoxZo5J21JIjbspFbEkQ&usqp=CAU',
+                  imageWidth: 120, imageHeight: 120,
+                 }); 
+                 	
+                 await swals.fire({
+                  title: ' cieee udah nambah tua aja nih ',
+                  imageUrl: 'https://cdn.kibrispdr.org/data/stiker-wa-kucing-kartun-9.jpg',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                 await swals.fire({
+                  title: ' sehat selalu yahh ',
+                  imageUrl: 'https://i.pinimg.com/originals/17/a9/46/17a946921da91360e395d666e9813258.gif',
+                  imageWidth: 120, imageHeight: 120,
+                 });
+
+                 await swals.fire({
+                 title: ' pokonya harus lebih baik lagi ',
+                 imageUrl: 'https://i.pinimg.com/originals/a2/e8/52/a2e852d08366741acaaacdc4400f2027.gif',
+                 imageWidth: 120, imageHeight: 120,
+                 });
+
+                  	
+                 await swals.fire({
+                  title: ' gk boleh males2an ',
+                  imageUrl: 'https://i.pinimg.com/originals/36/6c/dc/366cdce48265cb21afa004fe08816f71.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                  	
+                 await swals.fire({
+                  title: ' Gk boleh cepet nyerah ',
+                  imageUrl: 'https://i.pinimg.com/originals/f7/05/ef/f705ef2885352925c9820b3da99beb6d.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                  	
+                 await swals.fire({
+                  title: '  harus lebih rajin belajarnyaa ',
+                  imageUrl: 'https://i.pinimg.com/originals/fd/ff/68/fdff68f080e4e9cab6834b6c4c183b6f.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                  	
+                 await swals.fire({
+                  title: ' jangan begadang terus nanti sakit ',
+                  imageUrl: 'https://i.pinimg.com/originals/4a/aa/16/4aaa161306c32cde362ffd7d8bd129ec.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                 await swals.fire({
+                  title: ' jangan nangis ya, kamu jelek kalo nangis ',
+                  imageUrl: 'https://i.pinimg.com/originals/a4/c1/1c/a4c11c8feb7dcdeeaabed2ec9805c0c3.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                 await swals.fire({
+                  title: ' untuk doanya kamu yang ucapin nanti aku aminin dari sini ',
+                  imageUrl: 'https://i.pinimg.com/originals/61/16/3f/61163f78022351acb9c20cb64420455e.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                 await swals.fire({
+                  title: ' yaudhlah pokonya wish you all the best ',
+                  imageUrl: 'https://i.pinimg.com/originals/22/38/1a/22381a5c8c99ae224b73bf142e305009.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                 await swals.fire({
+                  title: ' babay... love you.... ',
+                  imageUrl: 'https://i.pinimg.com/originals/e4/14/b1/e414b1941121ea521b31e9eb5a1aa769.gif',
+                  imageWidth: 120, imageHeight: 100,
+                 });
+
+                 ketik();expl();
+            }            
+            mulai();
+</script>
+
+
+
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+  function nama() {document.getElementById("nama")}
+  function tombol() {document.getElementById('tomAksi').style.visibility = "visible";document.getElementById('tomAksi').style.opacity = "1";}
+  async function expl(){aksifoto();document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+  function aksifoto(){var e1 = document.getElementById('animasi');e1.classList.add("degdeg");document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "180px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";}
+  
+async function duar(){
+document.getElementById('konten').style.top = "0";
+document.body.style.backgroundColor = "#000";
+}
+
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 50) {
+       heartArr[0].remove()
+    }
+},100);
+
+  function ketik() {
+    if(u<penutup.length){
+      document.getElementById("penutup").innerHTML += penutup.charAt(u);
+      u++;
+      setTimeout(ketik,110);
+    }
+    if(u==penutup.length){
+    tombol();setInterval(createHeart,300);
+    }
+  }
+</script>
+</body>
+</html>
